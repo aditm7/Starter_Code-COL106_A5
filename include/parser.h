@@ -11,6 +11,9 @@ public:
 
     Parser();
     ~Parser();
-
-    void parse(vector<string> code);
+    
+    // Should parse the expression and 
+    // push the root to the exp_trees
+    // Also make necessary changes to the symtable
+    void parse(vector<string> expression);
 };

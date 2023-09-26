@@ -8,7 +8,7 @@ Parser::Parser(){
 
 }
 
-void Parser::parse(vector<string> code){
+void Parser::parse(vector<string> expression){
 
 }
 

@@ -11,7 +11,7 @@ class MinHeap{
   MinHeap();
   ~MinHeap();
 
-  void push_heap(int num);
-  int get_min();
-  void pop();
+  void push_heap(int num); // Insert num into the heap
+  int get_min(); // Returns min of the heap (which must be at root)
+  void pop(); // Deletes the min element from the heap
 };

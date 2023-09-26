@@ -16,10 +16,10 @@ public:
     // Insert a key in the symbol table, there is no value now
     void insert(string k);
 
-    // Remove a key (and value) in the symbol table
+    // Remove a key (and it's memory address) in the symbol table
     void remove(string k);
  
-    // Find the val corresponding to the key in the symbol table
+    // Find the memory address corresponding to the variable in the symbol table
     int search(string k);
 
     // Assigns a memory address to the key in the symbol table
