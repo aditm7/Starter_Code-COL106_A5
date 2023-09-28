@@ -23,3 +23,7 @@ vector<string> EPPCompiler::generate_targ_commands(){
 void EPPCompiler::write_to_file(vector<string> commands){
 
 }
+
+EPPCompiler::~EPPCompiler(){
+  
+}

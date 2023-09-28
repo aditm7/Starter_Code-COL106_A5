@@ -14,6 +14,8 @@ TARGET = $(BINDIR)/e++
 
 $(TARGET): $(SOURCES) $(TEST_SOURCE)
 	@$(CC) $(CFLAGS) -o $@ $^
+	@echo "Compiler Built Successfully !!"
+
 clean:
 	rm -f $(TARGET)
 
