@@ -10,11 +10,10 @@ TEST_SOURCE = $(TESTDIR)/main.cpp
 
 CFLAGS = -I$(INCDIR) -Wall -O3 -w -std=c++17
 
-TARGET = $(BINDIR)/targ
+TARGET = $(BINDIR)/e++
 
 $(TARGET): $(SOURCES) $(TEST_SOURCE)
 	@$(CC) $(CFLAGS) -o $@ $^
-
 clean:
 	rm -f $(TARGET)
 
