@@ -67,7 +67,7 @@ int main(int argc, char* argv[]) {
     cerr<<"Error: The compiler threw the below error while compiling the code:"<<endl;
     cerr<<e.what()<<endl; 
   }
-  cout<<"Targ code for file "<<argv[1]<<"generated successfully"<<endl;
+  cout<<"Targ code for file "<<argv[1]<<" generated successfully"<<endl;
   
   return 0;
 }
