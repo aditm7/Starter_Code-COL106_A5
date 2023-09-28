@@ -17,6 +17,6 @@ $(TARGET): $(SOURCES) $(TEST_SOURCE)
 	@echo "Compiler Built Successfully !!"
 
 clean:
-	rm -f ./bin/$(TARGET)
+	rm -f $(TARGET)
 
 .PHONY: clean
