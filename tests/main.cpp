@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
   if (argc != 2) {
-    cerr<<"Usage: e++ <input_file>"<<endl;
+    cerr<<"Usage: ./e++ <input_file>"<<endl;
     return 1;
   }
   ifstream inp_file(argv[1]);
