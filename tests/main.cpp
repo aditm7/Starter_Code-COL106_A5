@@ -53,7 +53,6 @@ int main(int argc, char* argv[]) {
     else if(expr[0]=="ret") continue;
     else var_count++;
   }
-
   if(code.back()[0] != "ret"){
     cerr<<"Error: Last E++ expression should be of return type"<<cnt<<endl;
     return 1;
@@ -69,6 +68,6 @@ int main(int argc, char* argv[]) {
     return 1;
   }
   
-  cout<<"Targ code for file "<<argv[1]<<"generated successfully"<<endl;
+  cout<<"Targ code for file "<<argv[1]<<" generated successfully"<<endl;
   return 0;
 }
