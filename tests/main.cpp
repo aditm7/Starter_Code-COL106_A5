@@ -48,12 +48,10 @@ int main(int argc, char* argv[]) {
   if(code.size()==0) return 0;
 
   int var_count = 0;
-  int max_var = 0;
   for(const vector<string>& expr:code){
     if(expr[0]=="del") var_count --;
     else if(expr[0]=="ret") continue;
     else var_count++;
-    max_var = max(max_var,var_count);
   }
 
   if(code.back()[0] != "ret"){
@@ -62,14 +60,15 @@ int main(int argc, char* argv[]) {
   }
 
   try{
-    EPPCompiler eppc("targ.txt",max_var);
+    EPPCompiler eppc("targ.txt",var_count);
     eppc.compile(code);
   }
   catch(const exception& e){ 
     cerr<<"Error: The compiler threw the below error while compiling the code:"<<endl;
     cerr<<e.what()<<endl; 
+    return 1;
   }
-  cout<<"Targ code for file "<<argv[1]<<" generated successfully"<<endl;
   
+  cout<<"Targ code for file "<<argv[1]<<"generated successfully"<<endl;
   return 0;
 }

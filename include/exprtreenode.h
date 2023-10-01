@@ -4,7 +4,7 @@ using namespace std;
 
 class ExprTreeNode {
 public:
-    string type; // Can be "ADD", "SUB", "MUL", "DIV", "MOD", "VAL", "DEL", "RET" or "VAR" (for variable)
+    string type; // Can be "ADD", "SUB", "MUL", "DIV", "VAL", "DEL", "RET" or "VAR" (for variable)
 
     // Stores the variable name if type is "VAR"
     string id;
