@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 #include <exception>
+#include <algorithm>
 using namespace std;
 
 int main(int argc, char* argv[]) {
