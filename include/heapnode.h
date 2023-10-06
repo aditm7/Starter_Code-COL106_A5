@@ -5,9 +5,9 @@ using namespace std;
 class HeapNode{
   public:
   int val;
-  HeapNode* par;
-  HeapNode* left;
-  HeapNode* right;
+  HeapNode* par = NULL;
+  HeapNode* left = NULL;
+  HeapNode* right = NULL;
   
   HeapNode();
   HeapNode(int _val);
